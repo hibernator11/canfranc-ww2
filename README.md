@@ -8,7 +8,7 @@ Este proyecto tiene como objetivo representar el conocimiento sobre Canfranc y l
 
 ### Modelado de datos
 
-<img src="cidoc-crm-ww2.png" width="75%">
+<img src="cidoc-crm-ww2.png" width="60%">
 
 
 ### Licencia
