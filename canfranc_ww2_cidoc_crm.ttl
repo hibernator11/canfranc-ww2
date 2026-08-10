@@ -1,0 +1,328 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ex: <https://example.org/canfranc-ww2/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================
+# Canfranc durante la Segunda Guerra Mundial
+# CIDOC-CRM 7.1.3
+# ============================================================
+
+# ---------- PLACES (E53) ----------
+
+ex:CanfrancStation a crm:E53_Place ;
+    crm:P1_is_identified_by ex:CanfrancStationName ;
+    crm:P3_has_note "Estación Internacional de Canfranc; nodo ferroviario y aduanero transpirenaico." .
+
+ex:SomportRailTunnel a crm:E53_Place ;
+    crm:P1_is_identified_by ex:SomportTunnelName ;
+    crm:P3_has_note "Túnel ferroviario de Somport, conexión Canfranc-Pau y espacio fronterizo." .
+
+ex:CanfrancLosAranones a crm:E53_Place ;
+    crm:P1_is_identified_by ex:CanfrancLosAranonesName ;
+    crm:P3_has_note "Entorno urbano y ferroviario de Canfranc-Los Arañones." .
+
+ex:CollDeLadronesFort a crm:E53_Place ;
+    crm:P1_is_identified_by ex:CollDeLadronesName ;
+    crm:P3_has_note "Fuerte de Coll de Ladrones, infraestructura militar del valle de Canfranc." .
+
+ex:Zaragoza a crm:E53_Place ;
+    crm:P1_is_identified_by ex:ZaragozaName .
+
+ex:SanSebastian a crm:E53_Place ;
+    crm:P1_is_identified_by ex:SanSebastianName .
+
+ex:FranceOccupied a crm:E53_Place ;
+    crm:P1_is_identified_by ex:FranceOccupiedName ;
+    crm:P3_has_note "Francia bajo ocupación alemana durante el periodo relevante." .
+
+ex:Spain a crm:E53_Place ;
+    crm:P1_is_identified_by ex:SpainName .
+
+ex:Portugal a crm:E53_Place ;
+    crm:P1_is_identified_by ex:PortugalName .
+
+ex:Switzerland a crm:E53_Place ;
+    crm:P1_is_identified_by ex:SwitzerlandName .
+
+ex:Algiers a crm:E53_Place ;
+    crm:P1_is_identified_by ex:AlgiersName .
+
+# ---------- IDENTIFIERS (E41) ----------
+
+ex:CanfrancStationName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Estación Internacional de Canfranc" .
+ex:SomportTunnelName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Túnel ferroviario de Somport" .
+ex:CanfrancLosAranonesName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Canfranc-Los Arañones" .
+ex:CollDeLadronesName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Fuerte de Coll de Ladrones" .
+ex:ZaragozaName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Zaragoza" .
+ex:SanSebastianName a crm:E41_Appellation ; crm:P190_has_symbolic_content "San Sebastián" .
+ex:FranceOccupiedName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Francia ocupada" .
+ex:SpainName a crm:E41_Appellation ; crm:P190_has_symbolic_content "España" .
+ex:PortugalName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Portugal" .
+ex:SwitzerlandName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Suiza" .
+ex:AlgiersName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Argel" .
+
+# ---------- PEOPLE / GROUPS ----------
+
+ex:AlbertLeLay a crm:E21_Person ;
+    crm:P1_is_identified_by ex:AlbertLeLayName ;
+    crm:P3_has_note "Funcionario francés de aduanas destinado en Canfranc en 1940; posteriormente vinculado a redes de evasión e inteligencia aliadas." .
+
+ex:AndreManuel a crm:E21_Person ;
+    crm:P1_is_identified_by ex:AndreManuelName ;
+    crm:P3_has_note "Relacionado con la dirección de la red Mithridate según la investigación periodística citada." .
+
+ex:ColonelRemy a crm:E21_Person ;
+    crm:P1_is_identified_by ex:ColonelRemyName ;
+    crm:P3_has_note "Dirigente de la Resistencia francesa relacionado con el reclutamiento/contacto de Le Lay según la fuente periodística citada." .
+
+ex:DoctorRochas a crm:E21_Person ;
+    crm:P1_is_identified_by ex:DoctorRochasName ;
+    crm:P3_has_note "Relacionado con la red Pie según la investigación periodística citada." .
+
+ex:LolaPardo a crm:E21_Person ;
+    crm:P1_is_identified_by ex:LolaPardoName ;
+    crm:P3_has_note "Colaboradora/correo que, según su testimonio recogido por HERALDO, transportó información desde Canfranc hacia Zaragoza." .
+
+ex:SantiagoMarraco a crm:E21_Person ;
+    crm:P1_is_identified_by ex:SantiagoMarracoName ;
+    crm:P3_has_note "Testimonio local utilizado para documentar movimientos de militares alemanes por el túnel de Somport al final de la guerra." .
+
+ex:FrenchResistance a crm:E74_Group ;
+    crm:P1_is_identified_by ex:FrenchResistanceName .
+
+ex:AlliedIntelligenceNetworks a crm:E74_Group ;
+    crm:P1_is_identified_by ex:AlliedIntelligenceNetworksName ;
+    crm:P3_has_note "Agrupación conceptual para las redes aliadas relacionadas con Canfranc; no debe interpretarse como una única organización histórica." .
+
+ex:GermanMilitary a crm:E74_Group ;
+    crm:P1_is_identified_by ex:GermanMilitaryName .
+
+ex:AlbertLeLayName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Albert Le Lay" .
+ex:AndreManuelName a crm:E41_Appellation ; crm:P190_has_symbolic_content "André Manuel" .
+ex:ColonelRemyName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Coronel Rémy" .
+ex:DoctorRochasName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Doctor Rochas" .
+ex:LolaPardoName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Lola Pardo" .
+ex:SantiagoMarracoName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Santiago Marraco" .
+ex:FrenchResistanceName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Resistencia francesa" .
+ex:AlliedIntelligenceNetworksName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Redes de inteligencia aliadas vinculadas a Canfranc" .
+ex:GermanMilitaryName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Militares alemanes" .
+
+# ---------- MATERIALS / OBJECTS ----------
+
+ex:GoldShipments a crm:E19_Physical_Object ;
+    crm:P1_is_identified_by ex:GoldShipmentsName ;
+    crm:P3_has_note "Envíos de oro documentados en la documentación aduanera conocida como 'Documentos de Canfranc'." .
+
+ex:WolframiumShipments a crm:E19_Physical_Object ;
+    crm:P1_is_identified_by ex:WolframiumShipmentsName ;
+    crm:P3_has_note "Envíos de wolframio y otras materias primas estratégicas asociados al comercio de guerra hispano-alemán." .
+
+ex:CanfrancDocuments a crm:E31_Document ;
+    crm:P1_is_identified_by ex:CanfrancDocumentsName ;
+    crm:P3_has_note "Conjunto de documentos aduaneros descubiertos en la estación en 2000 y utilizados para reconstruir movimientos de oro entre 1942 y 1943." .
+
+ex:GoldShipmentsName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Envíos de oro documentados en Canfranc" .
+ex:WolframiumShipmentsName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Envíos de wolframio" .
+ex:CanfrancDocumentsName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Documentos de Canfranc" .
+
+# ---------- TIME-SPANS (E52) ----------
+
+ex:TS_1939 a crm:E52_Time-Span ;
+    crm:P81_ongoing_throughout "1939" .
+
+ex:TS_1940 a crm:E52_Time-Span ;
+    crm:P81_ongoing_throughout "1940" .
+
+ex:TS_1941_1944 a crm:E52_Time-Span ;
+    crm:P81_ongoing_throughout "1941-1944" .
+
+ex:TS_April1942 a crm:E52_Time-Span ;
+    crm:P82_at_some_time_within "1942-04" .
+
+ex:TS_June1942_December1943 a crm:E52_Time-Span ;
+    crm:P81_ongoing_throughout "1942-06/1943-12" .
+
+ex:TS_1943 a crm:E52_Time-Span ;
+    crm:P81_ongoing_throughout "1943" .
+
+ex:TS_1944 a crm:E52_Time-Span ;
+    crm:P81_ongoing_throughout "1944" .
+
+# ---------- EVENTS / ACTIVITIES ----------
+
+ex:RefugeeMovements1939 a crm:E9_Move ;
+    crm:P1_is_identified_by ex:RefugeeMovements1939Name ;
+    crm:P7_took_place_at ex:CanfrancStation ;
+    crm:P27_moved_from ex:FranceOccupied ;
+    crm:P26_moved_to ex:Spain ;
+    crm:P4_has_time-span ex:TS_1939 ;
+    crm:P3_has_note "Movimientos de población y refugiados relacionados con la frontera franco-española tras la Guerra Civil y en el contexto de 1939." ;
+    crm:P67_refers_to ex:CanfrancMunicipalHistory .
+
+ex:AlbertLeLayArrival a crm:E5_Event ;
+    crm:P1_is_identified_by ex:AlbertLeLayArrivalName ;
+    crm:P7_took_place_at ex:CanfrancStation ;
+    crm:P11_had_participant ex:AlbertLeLay ;
+    crm:P4_has_time-span ex:TS_1940 ;
+    crm:P3_has_note "Llegada/destino de Albert Le Lay como responsable de la aduana francesa de Canfranc." ;
+    crm:P67_refers_to ex:LeLayMemorial, ex:FrenchCustomsHistory .
+
+ex:AlliedIntelligenceActivity a crm:E7_Activity ;
+    crm:P1_is_identified_by ex:AlliedIntelligenceActivityName ;
+    crm:P7_took_place_at ex:CanfrancStation, ex:Zaragoza, ex:SanSebastian ;
+    crm:P14_carried_out_by ex:AlbertLeLay, ex:FrenchResistance, ex:AlliedIntelligenceNetworks ;
+    crm:P4_has_time-span ex:TS_1941_1944 ;
+    crm:P3_has_note "Actividades de evasión, transporte de información y enlace con redes de resistencia e inteligencia aliadas." ;
+    crm:P67_refers_to ex:HeraldoEspionageArticle, ex:FrenchCustomsHistory .
+
+ex:RefugeeEscapeNetwork a crm:E7_Activity ;
+    crm:P1_is_identified_by ex:RefugeeEscapeNetworkName ;
+    crm:P7_took_place_at ex:CanfrancStation, ex:SomportRailTunnel ;
+    crm:P14_carried_out_by ex:AlbertLeLay, ex:FrenchResistance ;
+    crm:P4_has_time-span ex:TS_1941_1944 ;
+    crm:P3_has_note "Ayuda al paso hacia España de refugiados, resistentes, aviadores aliados y familias judías según las fuentes citadas." ;
+    crm:P67_refers_to ex:FrenchCustomsHistory, ex:HeraldoEspionageArticle .
+
+ex:NetworkArrestsApril1942 a crm:E5_Event ;
+    crm:P1_is_identified_by ex:NetworkArrestsApril1942Name ;
+    crm:P7_took_place_at ex:CanfrancStation, ex:Zaragoza ;
+    crm:P4_has_time-span ex:TS_April1942 ;
+    crm:P11_had_participant ex:FrenchResistance, ex:AlliedIntelligenceNetworks ;
+    crm:P3_has_note "Detención de integrantes de redes de inteligencia; la fuente periodística consultada cifra en 30 los participantes detenidos en abril de 1942." ;
+    crm:P67_refers_to ex:HeraldoEspionageArticle, ex:ElPaisCanfrancArticle .
+
+ex:GoldTransport1942_1943 a crm:E9_Move ;
+    crm:P1_is_identified_by ex:GoldTransport1942_1943Name ;
+    crm:P7_took_place_at ex:CanfrancStation ;
+    crm:P25_moved ex:GoldShipments ;
+    crm:P27_moved_from ex:Switzerland ;
+    crm:P26_moved_to ex:Portugal, ex:Spain ;
+    crm:P4_has_time-span ex:TS_June1942_December1943 ;
+    crm:P3_has_note "Movimientos de oro documentados en la estación. Las fuentes citadas reconstruyen aproximadamente 86,6 toneladas: 74,5 t hacia Portugal y 12,1 t hacia España." ;
+    crm:P67_refers_to ex:CanfrancDocuments, ex:IFC_GoldCanfranc, ex:HeraldoGoldArticle .
+
+ex:WolframiumTradeActivity a crm:E7_Activity ;
+    crm:P1_is_identified_by ex:WolframiumTradeActivityName ;
+    crm:P7_took_place_at ex:CanfrancStation ;
+    crm:P14_carried_out_by ex:GermanMilitary ;
+    crm:P16_used_specific_object ex:WolframiumShipments ;
+    crm:P4_has_time-span ex:TS_June1942_December1943 ;
+    crm:P3_has_note "Actividad comercial/logística vinculada al suministro de materias primas estratégicas, incluido wolframio, en el contexto del comercio con Alemania." ;
+    crm:P67_refers_to ex:IFC_GoldCanfranc, ex:HeraldoGoldArticle .
+
+ex:GermanPresenceCanfranc a crm:E5_Event ;
+    crm:P1_is_identified_by ex:GermanPresenceCanfrancName ;
+    crm:P7_took_place_at ex:CanfrancStation, ex:CanfrancLosAranones ;
+    crm:P11_had_participant ex:GermanMilitary ;
+    crm:P4_has_time-span ex:TS_1941_1944 ;
+    crm:P3_has_note "Presencia y vigilancia alemana asociada al sector internacional/fronterizo de la estación. No debe modelarse como una invasión alemana de España." ;
+    crm:P67_refers_to ex:CanfrancHistoryArticle, ex:HeraldoGoldArticle .
+
+ex:AlbertLeLayDiscoveryEscape a crm:E5_Event ;
+    crm:P1_is_identified_by ex:AlbertLeLayDiscoveryEscapeName ;
+    crm:P7_took_place_at ex:CanfrancStation ;
+    crm:P11_had_participant ex:AlbertLeLay ;
+    crm:P4_has_time-span ex:TS_1943 ;
+    crm:P3_has_note "Descubrimiento de la actividad de Le Lay y huida posterior hacia Argel según las fuentes municipal, aduanera y periodística." ;
+    crm:P67_refers_to ex:LeLayMemorial, ex:FrenchCustomsHistory, ex:HeraldoEspionageArticle .
+
+ex:LeLayEscapeMove a crm:E9_Move ;
+    crm:P1_is_identified_by ex:LeLayEscapeMoveName ;
+    crm:P25_moved ex:AlbertLeLay ;
+    crm:P27_moved_from ex:CanfrancStation ;
+    crm:P26_moved_to ex:Algiers ;
+    crm:P4_has_time-span ex:TS_1943 ;
+    crm:P3_has_note "Desplazamiento de huida de Le Lay desde Canfranc hacia Argel tras ser descubierto." ;
+    crm:P67_refers_to ex:LeLayMemorial, ex:FrenchCustomsHistory .
+
+ex:GermanRetreatThroughSomport a crm:E9_Move ;
+    crm:P1_is_identified_by ex:GermanRetreatThroughSomportName ;
+    crm:P7_took_place_at ex:SomportRailTunnel, ex:CanfrancStation ;
+    crm:P25_moved ex:GermanMilitary ;
+    crm:P27_moved_from ex:FranceOccupied ;
+    crm:P26_moved_to ex:Spain ;
+    crm:P4_has_time-span ex:TS_1944 ;
+    crm:P3_has_note "Movimientos de militares alemanes en retirada que atravesaron a pie el túnel de Somport hacia España, según el testimonio local citado." ;
+    crm:P67_refers_to ex:CanfrancHistoryArticle .
+
+# ---------- APPELLATIONS FOR EVENTS ----------
+
+ex:RefugeeMovements1939Name a crm:E41_Appellation ; crm:P190_has_symbolic_content "Movimientos de refugiados y población por Canfranc, 1939" .
+ex:AlbertLeLayArrivalName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Llegada de Albert Le Lay a Canfranc, 1940" .
+ex:AlliedIntelligenceActivityName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Actividades de inteligencia aliada vinculadas a Canfranc, 1941-1944" .
+ex:RefugeeEscapeNetworkName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Redes de evasión por Canfranc, 1941-1944" .
+ex:NetworkArrestsApril1942Name a crm:E41_Appellation ; crm:P190_has_symbolic_content "Detenciones de integrantes de redes de inteligencia, abril de 1942" .
+ex:GoldTransport1942_1943Name a crm:E41_Appellation ; crm:P190_has_symbolic_content "Transportes de oro por Canfranc, junio de 1942-diciembre de 1943" .
+ex:WolframiumTradeActivityName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Actividad logística/comercial del wolframio, 1942-1943" .
+ex:GermanPresenceCanfrancName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Presencia alemana en el entorno de Canfranc, 1941-1944" .
+ex:AlbertLeLayDiscoveryEscapeName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Descubrimiento de la actividad de Le Lay y huida, 1943" .
+ex:LeLayEscapeMoveName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Huida de Albert Le Lay de Canfranc a Argel, 1943" .
+ex:GermanRetreatThroughSomportName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Retirada de militares alemanes por Somport, 1944" .
+
+# ---------- SOURCES (E31) ----------
+
+ex:FrenchCustomsHistory a crm:E31_Document ;
+    crm:P1_is_identified_by ex:FrenchCustomsHistoryName ;
+    dcterms:source <https://www.douane.gouv.fr/sites/default/files/2023-05/23/livret-histoire-DNRED.pdf> ;
+    crm:P3_has_note "Fuente institucional de la administración aduanera francesa sobre Albert Le Lay y su actividad." .
+
+ex:LeLayMemorial a crm:E31_Document ;
+    crm:P1_is_identified_by ex:LeLayMemorialName ;
+    dcterms:source <https://www.canfranc.es/descargas/jardin/MemorialAlbertLeLay-es.pdf> ;
+    crm:P3_has_note "Memorial municipal de Albert Le Lay." .
+
+ex:HeraldoEspionageArticle a crm:E31_Document ;
+    crm:P1_is_identified_by ex:HeraldoEspionageArticleName ;
+    dcterms:source <https://www.heraldo.es/especiales/reportajes/canfranc/el-oro-y-los-nazis/espionaje.html> ;
+    crm:P3_has_note "Investigación periodística sobre las redes de espionaje, evasión y colaboradores." .
+
+ex:HeraldoGoldArticle a crm:E31_Document ;
+    crm:P1_is_identified_by ex:HeraldoGoldArticleName ;
+    dcterms:source <https://www.heraldo.es/especiales/reportajes/canfranc/el-oro-y-los-nazis/index.html> ;
+    crm:P3_has_note "Investigación periodística sobre oro, wolframio y actividad alemana." .
+
+ex:HeraldoCanfrancStationArticle a crm:E31_Document ;
+    crm:P1_is_identified_by ex:HeraldoCanfrancStationArticleName ;
+    dcterms:source <https://www.heraldo.es/especiales/reportajes/canfranc/el-oro-y-los-nazis/estacion.html> ;
+    crm:P3_has_note "Descripción histórica de la estación y sus funciones aduaneras y policiales." .
+
+ex:CanfrancHistoryArticle a crm:E31_Document ;
+    crm:P1_is_identified_by ex:CanfrancHistoryArticleName ;
+    dcterms:source <https://canfranc.eu/en/history-2/info/> ;
+    crm:P3_has_note "Historia divulgativa de Canfranc utilizada para el contexto de la estación, túnel y movimientos de 1944." .
+
+ex:IFC_GoldCanfranc a crm:E31_Document ;
+    crm:P1_is_identified_by ex:IFC_GoldCanfrancName ;
+    dcterms:source <https://ifc.dpz.es/publicaciones/ver/id/2222> ;
+    crm:P3_has_note "Ramón J. Campo, El oro de Canfranc, Institución Fernando el Católico." .
+
+ex:ElPaisCanfrancArticle a crm:E31_Document ;
+    crm:P1_is_identified_by ex:ElPaisCanfrancArticleName ;
+    dcterms:source <https://elpais.com/cultura/2013/12/13/actualidad/1386960638_955846.html> ;
+    crm:P3_has_note "Artículo de prensa sobre la historia de Canfranc durante la guerra." .
+
+ex:CanfrancMunicipalHistory a crm:E31_Document ;
+    crm:P1_is_identified_by ex:CanfrancMunicipalHistoryName ;
+    dcterms:source <https://www.canfranc.es/turismo_canfranc_pirineos.php?idRec=5> ;
+    crm:P3_has_note "Historia turística/institucional del municipio y de la estación." .
+
+ex:FrenchCustomsHistoryName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Historia institucional de la aduana francesa / DNRED" .
+ex:LeLayMemorialName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Memorial Albert Le Lay, Ayuntamiento de Canfranc" .
+ex:HeraldoEspionageArticleName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Heraldo: Una red de espías en Canfranc" .
+ex:HeraldoGoldArticleName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Heraldo: El oro y los nazis" .
+ex:HeraldoCanfrancStationArticleName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Heraldo: Estación de Canfranc" .
+ex:CanfrancHistoryArticleName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Canfranc.eu: History" .
+ex:IFC_GoldCanfrancName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Ramón J. Campo, El oro de Canfranc" .
+ex:ElPaisCanfrancArticleName a crm:E41_Appellation ; crm:P190_has_symbolic_content "El País: Canfranc" .
+ex:CanfrancMunicipalHistoryName a crm:E41_Appellation ; crm:P190_has_symbolic_content "Ayuntamiento de Canfranc: historia/turismo" .
+
+# ---------- PROVENANCE / EVIDENCE NOTE ----------
+# These properties are application-specific and intentionally separated
+# from CIDOC-CRM semantics.
+ex:GoldTransport1942_1943 ex:evidenceLevel "documentary" .
+ex:AlbertLeLayArrival ex:evidenceLevel "institutional-documentary" .
+ex:AlliedIntelligenceActivity ex:evidenceLevel "institutional-and-secondary" .
+ex:RefugeeEscapeNetwork ex:evidenceLevel "institutional-and-secondary" .
+ex:NetworkArrestsApril1942 ex:evidenceLevel "secondary-press" .
+ex:GermanRetreatThroughSomport ex:evidenceLevel "local-testimony/secondary" .
