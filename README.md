@@ -5,6 +5,7 @@ Este proyecto tiene como objetivo representar el conocimiento sobre Canfranc y l
 
 ### Autores
 
+- Gustavo Candela, Universidad de Alicante
 
 ### Modelado de datos
 
