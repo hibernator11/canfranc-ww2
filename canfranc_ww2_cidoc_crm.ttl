@@ -2,6 +2,8 @@
 @prefix ex: <https://example.org/canfranc-ww2/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 # ============================================================
 # Canfranc durante la Segunda Guerra Mundial
@@ -13,24 +15,30 @@
 ex:CanfrancStation a crm:E53_Place ;
     crm:P1_is_identified_by ex:CanfrancStationName ;
     crm:P3_has_note "Estación Internacional de Canfranc; nodo ferroviario y aduanero transpirenaico." .
+    owl:sameAs wd:Q800612 .
 
 ex:SomportRailTunnel a crm:E53_Place ;
     crm:P1_is_identified_by ex:SomportTunnelName ;
     crm:P3_has_note "Túnel ferroviario de Somport, conexión Canfranc-Pau y espacio fronterizo." .
+    owl:sameAs wd:Q3542183 .
 
 ex:CanfrancLosAranones a crm:E53_Place ;
     crm:P1_is_identified_by ex:CanfrancLosAranonesName ;
     crm:P3_has_note "Entorno urbano y ferroviario de Canfranc-Los Arañones." .
+    owl:sameAs wd:Q13049756 .
 
 ex:CollDeLadronesFort a crm:E53_Place ;
     crm:P1_is_identified_by ex:CollDeLadronesName ;
     crm:P3_has_note "Fuerte de Coll de Ladrones, infraestructura militar del valle de Canfranc." .
+    owl:sameAs wd:Q5870558 .
 
 ex:Zaragoza a crm:E53_Place ;
     crm:P1_is_identified_by ex:ZaragozaName .
+    owl:sameAs wd:Q10305 .
 
 ex:SanSebastian a crm:E53_Place ;
     crm:P1_is_identified_by ex:SanSebastianName .
+    owl:sameAs wd:Q10313 .
 
 ex:FranceOccupied a crm:E53_Place ;
     crm:P1_is_identified_by ex:FranceOccupiedName ;
